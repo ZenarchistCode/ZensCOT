@@ -186,7 +186,7 @@ modded class JMObjectSpawnerModule
 		if (!g_Game)
 			return;
 
-		if (!g_Game.IsLeftCtrlDown())
+		if (!g_Game.IsLeftCtrlDown() && !g_Game.ZenCOT_IsRightAltDown())
 		{
 			super.DeleteCursor(input);
 			return;
@@ -211,6 +211,12 @@ modded class JMObjectSpawnerModule
 
 		if (!obj)
 			return;
+
+		if (g_Game.ZenCOT_IsRightAltDown())
+		{
+			DeleteEntity(obj);
+			return;
+		}
 
 		m_AutoShow = !IsVisible();
 		if (m_AutoShow)

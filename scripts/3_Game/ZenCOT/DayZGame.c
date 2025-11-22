@@ -9,4 +9,9 @@ modded class DayZGame
     {
         return m_IsRightAltHolding;
     }
+
+    bool ZenCOT_IsWindowsKeyDown()
+    {
+        return m_IsWinHolding;
+    }
 }
