@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\scripts",
+    "\\scripts\\3_Game",
+    "\\scripts\\4_World",
+    "\\scripts\\5_Mission",
+    "\\scripts\\5_Mission\\CommunityOnlineTools",
+    "\\scripts\\5_Mission\\CommunityOnlineTools\\modules",
+    "\\scripts\\5_Mission\\CommunityOnlineTools\\modules\\Player"
+  ],
+  "SelectedNode": "\\scripts\\5_Mission\\CommunityOnlineTools\\modules\\Player\\JMPlayerModule.c",
+  "PreviewInSolutionExplorer": false
+}

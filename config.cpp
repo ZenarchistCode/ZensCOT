@@ -1,16 +1,13 @@
-/*
-	(c) 2025 | ZenCOT | Zenarchist
-*/
-
-class CfgPatches
+﻿class CfgPatches
 {
 	class ZenCOT
 	{
+		requiredVersion = 0.1;
 		requiredAddons[] =
 		{
 			"DZ_Data",
 			"DZ_Scripts",
-			"JM_COT_Scripts"
+			"ZenSleep"
 		};
 	};
 };
@@ -19,14 +16,22 @@ class CfgMods
 {
 	class ZenCOT
 	{
+		dir = "ZenCOT";
+		name = "Zen's COT Additions";
 		author = "Zenarchist";
+		credits = "";
+		version = "1.0";
 		type = "mod";
-		inputs = "ZenCOT/data/inputs.xml";
+		dependencies[] = 
+		{ 
+			"Game", 
+			"World", 
+			"Mission" 
+		};
 		class defs
 		{
 			class gameScriptModule
 			{
-				value = "";
 				files[] = 
 				{ 
 					"ZenCOT/scripts/3_Game"
@@ -34,7 +39,6 @@ class CfgMods
 			};
 			class worldScriptModule
 			{
-				value = "";
 				files[] = 
 				{ 
 					"ZenCOT/scripts/4_World"
@@ -42,10 +46,9 @@ class CfgMods
 			};
 			class missionScriptModule
 			{
-				value = "";
 				files[] = 
 				{ 
-					"ZenCOT/scripts/5_Mission"
+					"ZenCOT/scripts/5_mission"
 				};
 			};
 		};
